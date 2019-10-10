@@ -211,6 +211,7 @@ install_linux_software() {
     else
         if [ "$host_release" = "$ubuntu18" ]
         then
+            echo '* libraries/restart-without-asking boolean true' | sudo debconf-set-selections
             FA_DoExec apt-get install gcc make git vim python net-tools openssh-server \
             python-dev build-essential subversion \
             libncurses5-dev zlib1g-dev gawk gcc-multilib flex git-core gettext  \
