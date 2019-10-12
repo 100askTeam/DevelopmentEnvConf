@@ -172,9 +172,9 @@ install_common_software() {
     fi
 
     #install and configure vim
-    if (echo "${install_software_list[@]}" | grep -wq "vim");then
-        apt-get -y install vim && vim_configure && echo -e "${BLUE_COLOR}vim install completed.${END_COLOR}"
-    fi
+    #if (echo "${install_software_list[@]}" | grep -wq "vim");then
+        #apt-get -y install vim && vim_configure && echo -e "${BLUE_COLOR}vim install completed.${END_COLOR}"
+    #fi
 
     #install and configure tftp
     if (echo "${install_software_list[@]}" | grep -wq "tftp");then
