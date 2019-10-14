@@ -207,7 +207,7 @@ install_linux_software() {
         gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev \
         libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev \
         libavahi-compat-libdnssd-dev libldap2-dev  libxml2-dev p7zip-full \
-        libkrb5-dev libgsl0-dev  u-boot-tools  -y
+        libkrb5-dev libgsl0-dev  u-boot-tools lzop -y
     else
         if [ "$host_release" = "$ubuntu18" ]
         then
@@ -218,7 +218,7 @@ install_linux_software() {
             gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev \
             libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev \
             libavahi-compat-libdnssd-dev libldap2-dev  libxml2-dev p7zip-full \
-            libkrb5-dev libgsl0-dev  u-boot-tools  -y
+            libkrb5-dev libgsl0-dev  u-boot-tools lzop -y
         else
             echo "This Ubuntu version is not supported"
             exit 0
@@ -268,7 +268,7 @@ install_android_software() {
             libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev \
             libgl1-mesa-dev libxml2-utils xsltproc unzip m4 \
             lib32z1-dev ccache make  tofrodos \
-            python-markdown libxml2-utils xsltproc zlib1g-dev:i386 -y
+            python-markdown libxml2-utils xsltproc zlib1g-dev:i386 lzop -y
         else
             echo "This Ubuntu version is not supported"
             exit 0
